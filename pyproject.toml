@@ -1,0 +1,33 @@
+diff --git a/pyproject.toml b/pyproject.toml
+new file mode 100644
+index 0000000000000000000000000000000000000000..f6da94b195d071675610fb696151da93bac0dfd0
+--- /dev/null
++++ b/pyproject.toml
+@@ -0,0 +1,27 @@
++[build-system]
++requires = ["setuptools>=68", "wheel"]
++build-backend = "setuptools.build_meta"
++
++[project]
++name = "finint-suspicious-transactions-analysis-lab"
++version = "0.1.0"
++description = "FININT lab for detecting suspicious financial transactions."
++readme = "README.md"
++requires-python = ">=3.10"
++license = { text = "MIT" }
++authors = [{ name = "FININT Lab" }]
++dependencies = [
++  "matplotlib==3.9.0",
++  "networkx==3.3",
++  "numpy==2.0.0",
++  "pandas==2.2.2",
++]
++
++[project.scripts]
++finint-lab = "finint_lab.cli:main"
++
++[tool.setuptools]
++package-dir = {"" = "src"}
++
++[tool.setuptools.packages.find]
++where = ["src"]
