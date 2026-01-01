@@ -1,7 +1,5 @@
 
---- a/README.md
-+++ b/README.md
-@@ -1,13 +1,51 @@
+
  # Suspicious Transactions Analysis FININT Lab
  
  This lab teaches you how to conduct financial intelligence (FININT) analysis. FININT involves gathering and analysing information about financial transactions to identify tax evasion, money laundering or financing of criminal and terrorist organisations.
